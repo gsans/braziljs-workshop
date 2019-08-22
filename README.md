@@ -183,13 +183,19 @@ Add the Amplify Module and Service to `src/app/app.module.ts`:
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 
 @NgModule({
+  declarations: [
+    AppComponent
+  ],
   imports: [
+    BrowserModule,
     AmplifyAngularModule
   ],
   providers: [
     AmplifyService
-  ]
-});
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 ```
 
 ### Using Amplify Service
@@ -232,9 +238,14 @@ amplify console auth
 We can access the user's info now that they are signed in by calling `currentAuthenticatedUser()` which returns a Promise.
 
 ```js
+import { Component } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
 
-@Component(...)
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
 export class AppComponent {
   constructor(public amplify: AmplifyService) {
     amplify.auth().currentAuthenticatedUser().then(console.log)
