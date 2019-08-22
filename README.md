@@ -76,7 +76,7 @@ npm install --save @aws-amplify/auth aws-amplify-angular
 Next, we'll install the AWS Amplify CLI:
 
 ```bash
-npm install -g @aws-amplify/cli --unsafe-perm=true
+npm install -g @aws-amplify/cli
 ```
 > If you have issues related to fsevents with npm install. Try: `npm audit fix --force`.
 
