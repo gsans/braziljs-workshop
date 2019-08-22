@@ -168,9 +168,9 @@ The first thing we need to do is to configure our Angular application to be awar
 To configure the app, open __main.ts__ and add the following code below the last import:
 
 ```js
-import API from '@aws-amplify/auth';
+import Auth from '@aws-amplify/auth';
 import amplify from './aws-exports';
-API.configure(amplify);
+Auth.configure(amplify);
 ```
 
 Now, our app is ready to start using our AWS services.
