@@ -334,6 +334,8 @@ type Restaurant @model {
 }
 ```
 
+> Note: Don't forget to save the changes to the schema file!
+
 > Next, let's push the configuration to our account:
 
 ```bash
