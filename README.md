@@ -344,7 +344,7 @@ amplify push
 
 - Are you sure you want to continue? __Yes__
 - Do you want to generate code for your newly created GraphQL API __Yes__
-- Choose the code generation language target __typescript__
+- Choose the code generation language target __angular__
 - Enter the file name pattern of graphql queries, mutations and subscriptions __src/graphql/**/*.ts__
 - Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions __Yes__
 - Enter maximum statement depth [increase from default if your schema is deeply nested] __2__
