@@ -648,3 +648,7 @@ Message: The AWS Access Key Id needs a subscription for the service
 
 Solution: Make sure you are subscribed to the free plan. [Subscribe](https://portal.aws.amazon.com/billing/signup?type=resubscribe#/resubscribed)
 
+
+Message: TypeError: fsevents is not a constructor
+
+Solution: `npm audit fix --force`
